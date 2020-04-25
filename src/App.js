@@ -1,63 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import './styles/App.scss';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+
 } from "react-router-dom";
+
+//rutas
+import Header from './components/Header';
+import Landing from './components/Landing';
+import About from './components/About';
 
 function App() {
 
   return (
-        <Router>
-      <div className='App-header'>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+    <div className="wrapper">
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  
+        <Router>
+              <Header/>
+
+            {/* A <Switch> looks through its children <Route>s and
+                renders the first one that matches the current URL. */}
+            <main className='main'>
+            <Switch >
+              <Route path="/about">
+                <About />
+              </Route>
+             
+              <Route path="/">
+                <Landing />
+              </Route>
+            </Switch>
+            </main>
+          
+        </Router>
+      <footer className="footer">
+      <small>© Copyright 2020. Todos los derechos reservados.</small>
+      <br/>
+      <small>Template by boy jurgen</small>
+      
+      </footer>
+    </div>
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
 
 
 export default App;
