@@ -5,7 +5,7 @@ const About = () =>{
     return(
         <div className='about'>
        
-        <h1>About Us</h1>
+        <h1>La fórmula</h1>
         <h4>Pellentesque at consequat diam. Praesent vitae consequat dui. Phasellus et auctor elit. </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit odio, bibendum at mi nec, tristique imperdiet massa. Sed tempus risus lorem, id congue tortor ultricies sed. Donec interdum, odio ut commodo aliquam, tellus nunc ultrices orci, non aliquet nisi elit eu lectus. Vestibulum ultrices est odio, tincidunt tempor justo aliquam et. Praesent ac feugiat leo, vitae cursus sem. Fusce luctus tincidunt facilisis. Fusce sit amet consequat erat, in mattis nunc.</p>
         <br/>

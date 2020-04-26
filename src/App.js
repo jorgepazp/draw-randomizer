@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-
+  useLocation
 } from "react-router-dom";
 
 //rutas
@@ -12,8 +12,10 @@ import Header from './components/Header';
 import Landing from './components/Landing';
 import About from './components/About';
 
+
 function App() {
 
+ 
   return (
     <div className="wrapper">
 
@@ -27,7 +29,9 @@ function App() {
               <Route path="/about">
                 <About />
               </Route>
-             
+              <Route path="/generator">
+                <About />
+              </Route>
               <Route path="/">
                 <Landing />
               </Route>

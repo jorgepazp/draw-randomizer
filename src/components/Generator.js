@@ -1,10 +1,8 @@
 import React from 'react';
-import {
-    Link, NavLink
-  } from "react-router-dom";
 
 
-const Header = () =>{
+
+const Generator = () =>{
 
     return(
         <header className='header'>
@@ -25,4 +23,4 @@ const Header = () =>{
 
 }
 
-export default Header;
+export default Generator;
